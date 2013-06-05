@@ -1,6 +1,8 @@
 #!/usr/bin/env glas.concept
 
-Hi. This is the Main concept file of the whole Glas project:
+Hi.
+
+This is the Main concept file of the whole Glas project:
  * A translator for
  * Glas language syntax into/backfrom Python
  * A system for defining, and linking modules written in ANY language. 
@@ -53,6 +55,34 @@ Hi. This is the Main concept file of the whole Glas project:
     
     Petrov <- give: object -> me
     
-    
-    
-    
+Idealy, you would write language transformation modules (Glas.Dictionary)ies
+ and you would use glas* for translating (on the fly or not, doesn't matter)
+ Glas modules into any other compatible language.
+ 
+For instance, you would want for a large project to have alternatives 
+ of the main code base in any language.
+
+That's why you start wiring your project (not writing, wiring) using Glas
+ and then you start compiling different parts into different compilation
+ tasks.
+
+This way, you can start for example a new Unix like operating system in 
+ Glas, and using the glas system you would simply compile and translate 
+ the kernel modules of it into C modules (source files) which you further 
+ would either compile and run, or modify by hand to run them!
+
+The whole system including configuration languages and data markup languages
+ (xml based GUI modules? Glas modules!) could be defined and produced 
+ by the Glas system. The glas.py could also be your main shell.
+ 
+In fact, the first thing you would do creating your own kernel, is to
+ put Glas in it. 
+ 
+Sorry but that's hilarious for some reason, i don't know why.
+
+Later on, you would built yourself from the ground up using Glas, like
+ baron Munchausen pulling himself by the hair. Much like original Unix/C, 
+ but EASIER, in the far far future of 21st century ;-)
+
+Enjoy!
+-- Borko

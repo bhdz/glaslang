@@ -1,3 +1,24 @@
 #!/usr/bin/env glas.concept
 
 Hi. 
+
+Glas Dictionaries are concepts which represents the power of Glas
+ to select compatible languages into which it would translate it's source code 
+ into.
+ 
+So, the default Glas Dictionary would be your old pal Python. Glas would 
+ seamlessly translate into Python (100% translation of calls and data format)
+ 
+If you want to translate into a different language, for instance (C?), 
+ you would do it using Glas Dictionary module of a given type.
+ 
+Glas Dictionaries CAN and SUPPORT translation of language concepts:
+ for instance if Guido Van Rossum decides to change iter() name into iterator()
+ name, you would be spared! by using the appropriate Dictionary module
+ to translate all iter()s into iterator()s.
+ 
+And you can transform this way anything, using your main code base of Glas'es
+ to define your slang if you will. Words that doesn't just change their meaning
+ just like that. Of course, All glas dicts might need special ad hoc code 
+ changes in order to accomodate custom translation so this is not a silver 
+ bullet.
