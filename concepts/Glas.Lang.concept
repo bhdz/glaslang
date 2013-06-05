@@ -1,0 +1,58 @@
+#!/usr/bin/env glas.concept
+
+Hi. This is the Main concept file of the whole Glas project:
+ * A translator for
+ * Glas language syntax into/backfrom Python
+ * A system for defining, and linking modules written in ANY language. 
+    Check out Glas.Lang.Any for more!
+    
+    Glas should be the ultimate Glue System and General Purpose High Level 
+    Language.
+    
+    In fact, Glas is closer to English rather than any other computer 
+    language. Check out /Genesis.glas for a glimpse at this weird syntax.
+    
+    You might be amazed at how close Glas is to English, and how much
+     expression power it gives to the speaker! Even too much!
+     
+    A Glas directory looks like Bikini island during Nuclear testing!
+    
+    For instance in English you say:
+        "Why is the cookie jar empty, Cookie Monster? Why??!?"
+        
+    In Glas you would say:
+        why: cookie jar ~ empty: -> Cookie Monster ~ why: "??!?"
+    
+    and that would have the effect of:
+        Cookie_Monster.why(cookie_jar.empty()).why("??!?")
+    in Python
+    
+    Say you're the boss of a big multinational, may be you might say:
+        "Give me Petrov's legal documents, Debbie... Now!"
+    in Glas that would yell from your screen like this:
+    
+        give: Petrov ~ legal: ->> documents -> Debbie ~ now: # ?timedate
+    
+    in Old Pythonic that would be:
+        Debbie.give(Petrov.documents.legal()).now()
+ 
+    Glas is refactor resilient!
+    
+    For instance let's say we've got this code:
+    
+    Petrov ~ give: me, object # Petrov.give(me, object)
+    
+    Or, "Petrov, give me that object" right?
+    Well yeah, but the bastards changed the api to be in effect 
+    # me.give( Petrov, object ) # We changed the logic to be 
+                                # Person.recieve(from) like and blablablabl
+                                #  ablab lablabla
+    
+    which was a rather STUPID move, but check this out, our Glas'y sentence
+    still stands out in the same wording as before!
+    
+    Petrov <- give: object -> me
+    
+    
+    
+    
