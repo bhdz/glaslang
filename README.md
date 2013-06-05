@@ -14,7 +14,8 @@ Description:
     # $ cookie_monster.why(cookie_jar.empty()).why("?")
 
     
-Moto: "Syntax Error? Mission Impossible!"
+Moto: 
+    "Syntax Error? Mission Impossible!"
 
 Check out Genesis.glas! 
 
@@ -23,6 +24,7 @@ You will understand much more about it.
 I hope you like it.
 
 ~
+
 Umm, yeah. 
 
 This project has NOTHING to do with any consumer devices conneted with the 
@@ -32,10 +34,10 @@ It comes from the Bulgarian word for Voice (Глас) or a characterization
  of a loud-mouth speaker (Гласовит).
  
 It has nothing to do with the English language besides the near pronunciation
- or Стъкло.
+ of Стъкло.
 
 If big corps. come at my ass, I would immediatly change it's name to
- Styks (which means Стъкло script in Bulgarian)
+ something like Styks (which means Стъкло script in Bulgarian)
  
-So if you are a big corps. then just contact me, we would figure($) 
+So if you are a big corp. then just contact me, we would figure($)
  something out about it ;)
