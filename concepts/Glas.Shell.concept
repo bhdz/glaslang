@@ -1,0 +1,15 @@
+#!/usr/bin/env glas.concept
+
+Hi. 
+
+Glas Shell is a fully interactive shell module which you can use for EVERYTHING
+ connected with the devices of your own computer.
+ You should be able to execute operations on file listings, interpret and modify
+ files and other resources (including net).
+ 
+You would use the Shell module for every task anytime, any UI scheme behind it,
+ and you would use it in conjunction with ItsAlive to form Human Readable
+ content including GUIs and TUIs (Terminal UIs)
+
+Think of it as Plan9 protocol on steroids! It has smouldered Glas behind it B-)
+
