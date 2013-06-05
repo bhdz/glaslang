@@ -6,16 +6,19 @@ Rythms is the equivalent transformation of Glas statements.
 
 like this:
 
-a ~ c -> b      = a ~ b ~ c # = a.b.c
+a ~ c -> b          = a ~ b ~ c # = a.b.c
 
-a -> c ~ b      = c ~ b ~ a # = c.b.a
+a -> c ~ b          = c ~ b ~ a # = c.b.a
 
-a ~ c ->> b     = a ~ b ~ c
+a ~ c ->> b         = a ~ b ~ c
 
-a ~ c :< F          = F: a ~ c
-a ~ b :< F: c       = F: a ~ b, c
+a ~ b <: F: c       = F: a ~ b, c = F(a.b, c)
 
-a ~ b :<< F: c      = a ~ F: b, c
+a ~ b <<: F: c      = a ~ F: b, c = a.F(b,c)
+
+a ~ b :> F: c       = F: c, a ~ b = F(c, a.b)
+
+a ~ b :>> F: c      = a ~ F: c, b = a.F(c,b)
 
 
 F: a => G  = (F: a): :< G = G: F: a
@@ -23,13 +26,11 @@ F: a => G  = (F: a): :< G = G: F: a
 if: A => B = (if: a) :< B = B: (if: a) # = B(if(A)) -> if A is not None then B is not None (A => B) and execute B with A; B(A)
 
 # declaration of a new method on the fly inside Student class.
-
-if: age > 23 =>
-    {{ you, "You are too bigh to study in UNI" }}
-elif: age < 16 =>
+if: age > 23 => 
+    {{ you, "are too bigh to study in UNI" }}
+=> if: age < 16  => 
     {{ "Grow up kid!" : /dev/stderr }}
-else:
-    => {{ "Come on, lad! studdy your ass off!" }}
+=> {{ "Come on, lad! studdy your ass off!" }}
 
 <=
     education -> Person: $ :< Student: $
@@ -42,3 +43,30 @@ else:
 new function: my, arguments =>
     new function ~ body statements
     
+# Person().Student
+Student: Person =
+
+    __init__: self, name, age, class, speciality =>
+        __init__: name, age -> super: Student, self
+        
+        with me: => 
+            on: class, speciality =>
+                = 
+            # in other words: me.class = class & me.speciality = speciality
+            
+        add years book: name, age, class, speciality -> self ~ school:
+                
+    __str__: me =>
+        with me: =>
+            on: class, age =>
+                {{ "Person:Student: name: {name}, age: {age} = \
+                    "class: {class}, speciality: {speciality};" %
+                        class = class, speciality = speciality }}
+# another way of saying the same thing
+Person :< Student = 
+    ...
+
+
+for: x in iterable =>
+    {{ x ** 2 }}
+
