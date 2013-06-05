@@ -1,0 +1,44 @@
+#!/usr/bin/env glas.concept
+
+Hi. 
+
+Rythms is the equivalent transformation of Glas statements.
+
+like this:
+
+a ~ c -> b      = a ~ b ~ c # = a.b.c
+
+a -> c ~ b      = c ~ b ~ a # = c.b.a
+
+a ~ c ->> b     = a ~ b ~ c
+
+a ~ c :< F          = F: a ~ c
+a ~ b :< F: c       = F: a ~ b, c
+
+a ~ b :<< F: c      = a ~ F: b, c
+
+
+F: a => G  = (F: a): :< G = G: F: a
+
+if: A => B = (if: a) :< B = B: (if: a) # = B(if(A)) -> if A is not None then B is not None (A => B) and execute B with A; B(A)
+
+# declaration of a new method on the fly inside Student class.
+
+if: age > 23 =>
+    {{ you, "You are too bigh to study in UNI" }}
+elif: age < 16 =>
+    {{ "Grow up kid!" : /dev/stderr }}
+else:
+    => {{ "Come on, lad! studdy your ass off!" }}
+
+<=
+    education -> Person: $ :< Student: $
+
+# def Student($, Person($)).education(*,**):
+#   r = eval("""if age > 23....""")
+#   return ret
+#
+    
+new function: my, arguments =>
+    new function ~ body statements
+    
