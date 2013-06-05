@@ -108,5 +108,5 @@ I ~ have: not: figured out: what to do: (with, "!")
 {{ \t * 2, "file!" }}
 
 {> have you enjoyed it? <}
-{{ "I hope {you} {have you enjoyed it}" % you = "Eric S. Raymonds", have you enjoyed it = ? }}
+{{ "I hope {you} {have you enjoyed it}" % you = "rjh", have you enjoyed it = ? }}
 
