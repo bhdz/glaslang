@@ -1,0 +1,9 @@
+This directory describes the different concepts of Glas described in 
+ *.concept files which might be an utf-8 plain text file or something else.
+
+Eyeball them out or use glas.concept utility to manipulate, read, write, so on
+ *.concept files. 
+ 
+If any computer is supposed to interpret them, then probably that language
+ will be Glas itself. Glas is general enough for that task.
+
