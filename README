@@ -8,7 +8,8 @@ Author:
 
 License: 
 
-    BSD3: use it, abuse it (modify it), keep my name out of it
+    BSD4: use it, abuse it (modify it), sell it, keep my name out of it, and 
+        don't advertise Glas (that's my job ;))
 
 Description:
 
