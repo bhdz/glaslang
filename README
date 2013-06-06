@@ -12,7 +12,7 @@ Author:
 License: 
 
     BSD4: use it, abuse it (modify it), sell it, keep my name out of it, and 
-        not advertise Glas (that's my job ;))
+        don't advertise Glas (that's my job ;))
 
 Motto:
  
@@ -42,42 +42,42 @@ Description:
     
     Petar went for a banana, a pear, a big orange, 
         and carried them in a basket home
-    > ERROR! weak! 
-    > F--!
+     > ERROR! weak! 
+     > F--!
      
     Petar ~ went: for a banana, a pear, a big orange, 
         and carried them in a basket home
-    > Petar.went(for_a_banana, a_pear, a_big_orange, and_carried_...
-    > ERROR! gettin' better ... 
-    > E+ ...
+     > Petar.went(for_a_banana, a_pear, a_big_orange, and_carried_...
+     > ERROR! gettin' better ... 
+     > E+ ...
     
     Petar ~ went: for a banana, a pear, a big orange, 
         and: carried them in a basket home
-    > Petar.went(for_a_banana, a_pear, a_big_orange, and(carried_...
-    > ERROR! Almost there, don't give up ;) 
-    > C-!
+     > Petar.went(for_a_banana, a_pear, a_big_orange, and(carried_...
+     > ERROR! Almost there, don't give up ;) 
+     > C-!
     
     Petar ~ went: for a banana, a pear, a big orange ~
         and: carried them in a basket home
-    > Petar.went(for_a_banana, a_pear, a_big_orange).and(carried_...
-    > ERROR! Almost there, you can sense yourself gloating with an 'A' infront 
-    >  of your parents. 
-    > B-
+     > Petar.went(for_a_banana, a_pear, a_big_orange).and(carried_...
+     > ERROR! Almost there, you can sense yourself gloating with an 'A' infront 
+     >  of your parents. 
+     > B-
     
     Petar ~ went: for a banana, a pear, a big orange ~
         and: carried them in a basket home
-    > Warning! You did it... 
-    >  juuuust finish it for a perfect score. 
-    > A--
+     > Warning! You did it... 
+     >  juuuust finish it for a perfect score. 
+     > A--
     
     Petar ~ went: for a banana, a pear, a big orange ~
         and: ~ carried them: in a basket home
-    > BINGO! You've got your A! 
-    >  Now go nag your parents for more allowance, or score a FATAL :D
+     > BINGO! You've got your A! 
+     >  Now go nag your parents for more allowance, or score a FATAL :D
     
     Petar ~ went: for a banana, a pear, a big orange ~
         and: ~ carried: them, in a basket, home
-    > FATALITY! F**king A+! You're a star, and you ROCK!
+     > FATALITY! F**king A+! You're a star, and you ROCK!
     
     :D 
     
