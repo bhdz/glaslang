@@ -1,5 +1,8 @@
 glaslang: The Glas Programming Language
 ========
+
+Hi.
+
 Glas is a Pythonic Offshot language that got out of hand.
 
 Author: 
@@ -9,7 +12,7 @@ Author:
 License: 
 
     BSD4: use it, abuse it (modify it), sell it, keep my name out of it, and 
-        don't advertise Glas (that's my job ;))
+        not advertise Glas (that's my job ;))
 
 Description:
 
@@ -18,14 +21,15 @@ Description:
      
         why: cookie jar ~ empty: -> cookie monster  ~ why: "?"
         > cookie_monster.why(cookie_jar.empty()).why("?")
+        
+    In fact, Glas is hardly a computer language at all! It's more like 
+     training wheels for the machine to understand common English language.
 
-    
 Motto:
  
     "Syntax Error? Mission Impossible!"
 
-Check out welcome.glas OR Genesis.glas.
-You will understand much more about it.
+Check out welcome.glas or Genesis.glas. You will understand much more about it.
 
 I hope you like it.
 
@@ -47,3 +51,6 @@ I hope you like it.
      
     So if you are a big corp. then just contact me, we would figure($)
      something out about it ;)
+     
+Enjoy!
+
