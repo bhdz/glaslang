@@ -17,14 +17,13 @@ Description:
 Moto: 
     "Syntax Error? Mission Impossible!"
 
-Check out Genesis.glas! 
+Check out welcome.glas OR Genesis.glas
 
 You will understand much more about it.
 
 I hope you like it.
 
 ~
-
 Umm, yeah. 
 
 This project has NOTHING to do with any consumer devices conneted with the 
