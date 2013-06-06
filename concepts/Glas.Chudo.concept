@@ -2,18 +2,18 @@
 
 Hi.
 
-Chudo is a concept module for Glas in order to GUESS the Glas code of any
- English based language.
+Chudo is a concept module for Glas in order for the interpreter to GUESS the 
+ Glas code of any  English based language.
 
 For instance,
     "Sally, give me Petrov's sales report, now!"
     
-would normally be translated by a Human into Glas like this:
+ would normally be translated by a Human into Glas like this:
     
     Sally ~ give me: Petrov ~ sales ->> report -> now:
     
 Now, Sally : give me : Petrov : sales : report : now
- is easy for a machine to gues if a good Dictionary is abroad. But it is not
+ is easy for a machine to guess if a good Dictionary is aboard. But it is not
  a runnable code yet!
 
 Further examination the Dictionary the machine might "notice" that:
@@ -38,9 +38,9 @@ It's your job to correct Glas.Chudo's many programming errors. After all
  behind the operation ;)
  
 Chudo means Wonder in Bulgarian, and it's used as a Wonder()ing concept. 
- Imagine The Glas interpreter scratching his "head" (???) at Shakespeare
- Think of it as "Voice.ToWonder" in glas.chudo.guess: *args, **keys
- 
+ Imagine The Glas interpreter scratching his "head" (???) at Shakespeare.
+
+Think of it as "Voice.ToWonder" in glas.chudo.guess: *args, **keys
 
 Enjoy!
 
