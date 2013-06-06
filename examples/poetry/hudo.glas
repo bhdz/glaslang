@@ -1,0 +1,256 @@
+#!/usr/bin/env glas
+
+Hudo, the hacker's budo
+
+True hacking does not engage in competition.
+There is no winning or losing.
+
+True hacking ~ knows: no: faults: "..."
+there ->> are: neither: bugs !nor targets.
+
+True hacking is: neither: ( breaking ~ in: 
+!nor destroying: ) ->> systems.
+
+True hacking is: software-producing,
+ and: nurtures: understanding ->>
+ of nature !and systems.
+
+How can: you ~ fail: if: you ~ are: a force of nature?
+
+Does the wind: fail ->> to whisper?
+Does the water: fail ->> to flow?
+Does the earth: fail ->> to crumble?
+Or: fire can't: keep ->> you :: warm?
+
+It ~ is: because: you ~ fail:, to feel it.
+And If: so, fail: at failing.
+
+To compete ~ is: pointless, also: to achieve.
+
+To wonder ~ is: timeless !and eternal,
+and: deed ~ is: just: a consequence!
+
+To nurture ~ is: (hard enough: to be a drudge,)
+!and growth is: always, "bla bla bla" :-/
+
+So, be free, and let other be free
+Help your fellow, and allow yourself to be,
+by asking your questions the right way,
+and give yourself away (almost for free)!
+
+Be ~ a hacker, and teach your Hudo ways
+And don't forget, we all go sullen through our days
+full of drudgery and perception haze.
+
+Brighten your outlook,
+and your problems will give way!
+
+~.~
+
+#!/usr/bin/env glas.web
+
+
+Hudo, the hacker's budo
+
+True hacking does not engage in competition.
+There is no winning or losing.
+
+True hacking knows no faults...
+there are neither bugs nor targets.
+
+True hacking is neither breaking in
+nor destroying systems.
+
+True hacking is software-producing,
+and nurtures understanding
+of nature and systems.
+
+How can you fail if you are a force of nature?
+
+Does the wind fail to whisper?
+Does the water fail to flow?
+Does the earth fail to crumble?
+Or fire can't keep you warm?
+
+It is because you fail to feel it.
+And If so, fail at failing.
+
+To compete is pointless, also to achieve.
+
+To wonder is timeless and eternal,
+and deed is a just a consequence!
+
+To nurture is hard enough to be a drudge,
+and growth is always "bla bla bla" :-/
+
+So, be free, and let other be free
+Help your fellow, and allow yourself to be,
+by asking your questions the right way,
+and give yourself away (almost for free)!
+
+Be a hacker, and teach your Hudo ways
+And don't forget, we all go sullen through our days
+full of drudgery and perception haze.
+
+Brighten your outlook,
+and your problems will give way!
+
+~.~
+<html>
+
+<head>
+<meta name="description" content="Hudo Poem" />
+<meta name="based_on" content="Morihei Ueshiba, true budo" />
+<meta name="keywords" content="hudo,hacker,hacking,budo" />
+
+<!-- meta name="author" content="Boril Boyanov" / -->
+<!-- meta name="author_email" content="borko.boyanov@gmail.com" / -->
+
+<!-- 
+You are free to use it, copy it, spread it, 
+ modify the style but not the meaning.
+ 
+ If you decide to change the meaning, 
+ then call your hudo another name!
+-->
+
+<title>Hudo, the hacker's budo</title>
+
+
+
+<style type="text/css">
+
+.hudo {
+    text-align:center;
+    width: 100%;
+}
+
+.hudo_envelope {
+    width: 25em;
+    margin: 0 auto;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.hudo_poem {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    
+    color: black;
+    background: lightgray;
+}
+
+.true_budo {
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hudo">
+<div class="hudo_envelope">
+<div class="hudo_poem">
+
+<h2>Hudo, the hacker's budo</h2>
+
+<em>
+<p>
+True hacking does not engage in competition. <br/>
+There is no winning or losing. 
+</p>
+
+<p>
+True hacking knows no faults... <br/>
+there are neither bugs nor targets. 
+</p>
+
+<p>
+True hacking is neither breaking in <br/>
+nor destroying systems. 
+</p>
+
+<p> 
+True hacking is software-producing, <br/>
+and nurtures understanding <br/>
+of nature and systems.
+</p>
+
+<p>
+How can you fail if you are a 
+<strong>force of nature</strong>? 
+</p>
+
+<p>
+Does the wind fail to whisper?<br/>
+Does the water fail to flow?<br/>
+Does the earth fail to crumble?<br/>
+Or fire can't keep you warm?
+</p>
+
+<p>
+It is because you fail to feel it. <br/>
+And If so, <strong>fail at failing</strong>.
+</p>
+
+<p>
+To compete is pointless, also to achieve.
+</p>
+
+<p>
+To wonder is timeless and eternal, <br/>
+and deed is a just a consequence!
+</p>
+
+<p>
+To nurture is hard enough to be a drudge, <br/>
+and growth is always "bla bla bla" :-/
+</p>
+
+<p>
+So, be free, and let other be free<br/>
+Help your fellow, and allow yourself to be,<br/>
+by asking your questions the right way,<br/>
+and give yourself away (almost for free)!
+</p>
+
+<p>
+Be a hacker, and teach your Hudo ways<br/>
+And don't forget, we all go sullen through our days<br/>
+full of drudgery and perception haze.
+</p>
+
+<p>
+Brighten your outlook,<br/>
+and your problems will give way!
+</p>
+
+<p>~.~</p>
+
+</em>
+
+</div> <!-- hudo poem -->
+
+<div class="true_budo">
+
+<em><p>
+"True budo does not engage in competition. <br/>
+There is no winning or losing.  <br/>
+True budo knows no defeat... there is neither opponent nor foe. <br/>
+True budo is neither fighting nor killing,  <br/>
+True budo is life-giving, and nurtures all things in nature." <br/>
+</em>
+<strong>-- Morihei Ueshiba</strong>
+</p>
+</div> <!-- true budo -->
+
+</div> <!-- hudo envelope -->
+</div> <!-- hudo -->
+
+</body>
+</html>
+
+
