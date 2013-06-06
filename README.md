@@ -20,7 +20,7 @@ Description:
         > cookie_monster.why(cookie_jar.empty()).why("?")
 
     
-Moto:
+Motto:
  
     "Syntax Error? Mission Impossible!"
 
