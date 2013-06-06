@@ -70,3 +70,5 @@ Person :< Student =
 for: x in iterable =>
     {{ x ** 2 }}
 
+Enjoy!
+

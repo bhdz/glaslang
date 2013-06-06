@@ -1,3 +1,5 @@
+Hi.
+
 This directory describes the different concepts of Glas described in 
  *.concept files which might be an utf-8 plain text file or something else.
 
@@ -6,4 +8,13 @@ Eyeball them out or use glas.concept utility to manipulate, read, write, so on
  
 If any computer is supposed to interpret them, then probably that language
  will be Glas itself. Glas is general enough for that task.
+
+
+Usually concepts are fully freeform, but it's nice to start your concept with
+ "Hi." and end it with "Enjoy!"
+ 
+Glas.Concept helper will understand "Hi."s and "Enjoy!"s and aid you in 
+ developing your concept further.
+
+Enjoy!
 

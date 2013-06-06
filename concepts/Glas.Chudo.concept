@@ -1,0 +1,46 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+Chudo is a concept module for Glas in order to GUESS the Glas code of any
+ English based language.
+
+For instance,
+    "Sally, give me Petrov's sales report, now!"
+    
+would normally be translated by a Human into Glas like this:
+    
+    Sally ~ give me: Petrov ~ sales ->> report -> now:
+    
+Now, Sally : give me : Petrov : sales : report : now
+ is easy for a machine to gues if a good Dictionary is abroad. But it is not
+ a runnable code yet!
+
+Further examination the Dictionary the machine might "notice" that:
+
+    Sally ~ give me
+    Petrov ~ report
+    report ~ sales
+    Sally ~ now
+    
+Holds true for any other words!
+
+With a little help from the machine's friends' (Chudo module, Glas module, 
+ A Real life Human module) hints, the machine can form the atlernatives 
+ into the following ambiguous sentences:
+
+    Sally: give me: Petrov ~ sales ->> report: now      # Nah.
+    Sally ~ give me ~ Petrov ~ sales ->> report: now    # Missed it...
+    Sally ~ give me: Petrov ~ sales ->> report: now     # Bingo!
+    
+It's your job to correct Glas.Chudo's many programming errors. After all
+ Glas.Chudo.guess: is just a dumb combination machine! You are the brainz 
+ behind the operation ;)
+ 
+Chudo means Wonder in Bulgarian, and it's used as a Wonder()ing concept. 
+ Imagine The Glas interpreter scratching his "head" (???) at Shakespeare
+ Think of it as "Voice.ToWonder" in glas.chudo.guess: *args, **keys
+ 
+
+Enjoy!
+
