@@ -1,0 +1,136 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+This is the concept file for the Concept concept { the last one to close 
+ the doors }
+
+Think of this concept as a weapon for surval. 
+
+Let that be off, your otherwise Free, Creative, and Joyous, mind.
+
+Motto:
+    "This is the concept Concept concept. So Meta!"
+    
+This file is a metaglas file so glas here will try glas.shepot on it
+ and "teach" itself how to read more and more of the file itself using the 
+ text itself as a guideline how to load more and more interpreters.
+ It might fail totally, in which case, it goes "There's no WORDS ONIT FCKIT 
+ I'm going LIVE" on your /dev/stdout. Poor you, feed your glascupz better.
+ 
++glascup: A glascup is a glas.concept process instance which reads, 
+ gathers interpreter info, interprets, and integrates,  outputs results 
+ somewhere. You are filling the glascup
+
+So right here let me show you what I am blabbing about. Now I will hint the 
+ current glascup (my wretched brain) to load an interpreter for Glas itself.
+ I will try twice, one soft, one hard. It would either NOW_FGLIVE it or 
+ { NOW_FGLIVE it means "No words (on it), fuck it, i'm going live" condition }
+ 
+Also I will define the semantic structure of the Concept concept concept.
+
+Firstly, it needs A Dictionary, and An Elaboration on that Dictionary.
+By now, a smart glascup, knows this text is interpretable by Glas so it's 
+interpreted already with PRECON(DITION) interpretation, just waiting for my 
+ signal to start executing "REAL" (my own commands). The PRECON interetation
+ up until clear signal should be there after the whole run of the glascup.
+ 
+After that on my command, the Glas "REALCON" would turned off, a conclusion
+ is to be drawn by machine and man, and finaly, integrated with MANCON (man made 
+ conditional interpretation of results).
+ 
+The results should be outputed elsewhere, worst on /dev/stdout, even worse on 
+ /dev/net/eth0
+ 
+More and more elaborations are added into the concept, all on the same 
+ dictionary. Elaborations are a way to enrich the information linked inside the
+ dictionary, adding opinions, and other general blablabla
+ 
+So let's try interpreting this filly softly:
+
+{! glas !}
+{{ "Test" * 3 }} # Did it work?
+
+Obviously not, but hey, why not again, this time with more force:
+    None, Hash, Exclamation, Something Else
+ 
+#!/usr/bin/env glas.shepot
+
+# O-K, now we should be inside the Glas glascup condition (REALCON)
+
+# Let's define a single Dictionary word, don't worry about class/object 
+#  dichotomy you deal with words here.
+ 
+Dictionary:
+    Brassiere, Brazier, Brain, Mind^Map, Brainzy, Brainy, Sex, Fucking, 
+    Conception, Inception { fuck this movie }, ... { fill in the blanks }
+    
+    glogo ~ [ LOL LOL LOL, glogo is Glas Logos, the elaboration "manager".
+        Call him mr. glogo ]
+        
+#
+# Let's default: this Elaboration to be the main one, the root if you will
+#
+# For now we've linked Dictionary ~ Elaboration property
+#  And for now each glascup will have this association
+#
+
+Elaboration -> Dictionary:
+
+    Brassieres | Brass^ier | Sex: Brassiere, Brazier, Brain
+        -> [
+                Well you know... the act of it. What the hell are you doing
+                when surViving. 
+            ]
+    
+    Sexy | Mindful | Intelligent | Beautiful: Brainy, Brainzy, Combo+bruity 
+        -> [ 
+                Positive Combination of Brainzy/Brainy for each match, 
+                Comes from (Comb)inat(O)rial (Br)ain Cong(ruity) \:D.
+                Each couple of people has a certain Combobruity lvlz that
+                match more or less. O(n) of your wretched relationship :D
+                
+                Don't share your combobruity publically you stupid! ;)
+                select people with whom you might want to perform a match
+                try() :D
+                
+                Otherwise you would be laughed at and ridiculed and your 
+                brainzy/brainy meters will fall like a penis infront of a 
+                ... hmm... you fill those lines.
+            ]
+            
+    Kinks | Sex Toys | Tools | Utilities: Brain, Mind^Map
+        -> [
+                Well, all survival needs some kind of teeth, claws, 
+                brainz/boobs/penises ratio, tools, weapons, spears, and 
+                software. etc. etc. whatever noun you might think of relating
+                the survival game. Therefore, Kinks is an appropriate term.
+           ]
+
+> glas: stop ->> shepot
+
+OK. now we instructed Glas interpreter to STOP right here, and do a 
+ integration pass (the whole document up until the language marker,
+ the interpreted text between the stop and the marker, and finaly
+ this text until the end or another language marker as a conclusion.
+ 
+Let's try something else. just for kicks, shits and giggles
+
+#!/usr/bin/env python
+
+from glasl import Glas
+
+Glas().Dictionary( {
+        'glogo' :  { 
+            'binary': '/usr/bin/env glas.concept',
+            'concept': 'glogo.concept'
+         },
+    }
+)
+
+Glas().Dictionary(
+ {
+ }
+)
+Enjoy!
+

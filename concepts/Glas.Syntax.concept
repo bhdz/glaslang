@@ -1,0 +1,73 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+Concepts about Glas Syntax
+
+: Association thingy, think function calls or dicts. req: args
+
+~ association thingy, think objects and properties, objects/subjects (methods)
+ same thing.
+ 
+-> back association thingy, think properties/objects, subjects(methods)/objects 
+
+->> back association thingy, strong, think properties and objects but 
+ with higher precedence than ~ and ->
+ 
+<- scoop back, weak, this gatheres all that is with lower precedence than the
+ scoop, and pastes them as association argument infront (for method calls for 
+  instance)
+
+<<- scoop back, strong, this does the same as the <- oper but stronger than 
+ ~ , therefore it would scoop only the closes mothefucka and paste it on to 
+ the first argument
+
+>- scoop front, weak
+>>- scoop front, strong
+
+
+:: Association thingy, stronger, think of function calls or dicts
+ Now here you would use this if you want to make many many calls using :
+ in a big pipeline.
+ 
+ 
+
+
+# Note:
+# The scoop back means that it go aaaaall the way to the back until noted
+#   and will paste them infront. Scoop to back seems like a nice name, dont ask
+# why, just a powerful hunch. Feel free to scoop: front when I say scoop: the 
+# back
+
+
+# Note:
+# The normal behaviour of Glas is to do all Rythms on all code and
+#  transforms it into general STD notation removing all functionaly identical 
+# operators into the format needed for "forward" thought using ~ only ~ these
+#  ~opers. I can't remember how it was called Standard Notation? Algo-Rythming?
+# nevermind. bullshit anyway.
+# So:
+# this ~ thing -> will
+#   becomes
+# will ~ this ~ thing
+#
+# that ~ thing ->> will
+#   becomes
+# that ~ will ~ thing
+#
+# this ~ will <- scoop ~ into
+#   becomes
+# scoop ~ into ~ this ~ will
+#
+# this ~ scoops <<- into ~ will
+#   becomes
+# this ~ into ~ scoops ~ will
+#
+# a ~ b <- c ~ d => c~d ~ a~b
+# a ~ b <<- c ~ d => a ~ c~b ~ d
+# 
+
+
+
+Enjoy!
+

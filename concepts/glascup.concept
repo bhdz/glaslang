@@ -1,0 +1,46 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+This is the concept file for the Concept concept { the last one to close 
+ the doors }
+
+Think of this concept as a weapon for surval. 
+
+Let that be off, your otherwise Free, Creative, and Joyous, mind.
+
+Motto:
+    "This is the concept Concept concept. So Meta!"
+    
+This file is a metaglas file so glas here will try glas.shepot on it
+ and "teach" itself how to read more and more of the file itself using the 
+ text itself as a guideline how to load more and more interpreters.
+ It might fail totaly in which case it goes "There's no WORDS ON IT FCKIT 
+ I'm going LIVE" on your /dev/stdout. Poor you, feed your glascupz better.
+ 
+yeah... +glascup. A glascup is a glas.concept instance which reads, 
+ gathers interpreter info, and outputs results somewhere.
+ 
+Dictionary:
+    Glas Cup, Glas, Interpreter, Gather, Info
+    
+    
+Elaboration -> Dictionary:
+    alternatives|alterinatives: Glas Cup, Glas
+        ~ [
+            Forward freeform association, this one links concepts, words,
+            and other stuff that might be intelligable (interpretable) without
+            further "aid"
+          ]
+        ->
+            [ "backlink", "and now again a backlinking process" ]
+
+Elaboration ~ 2
+    -> Dictionary:: #!! <- this syntax! make it work! oper precedence ->~ vs :
+        ~ [
+        ...
+        ]
+        ->
+
+Enjoy!
+
