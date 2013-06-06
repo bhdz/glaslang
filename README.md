@@ -85,6 +85,10 @@ Check out welcome.glas or Genesis.glas. You will understand much more about it.
 
 I hope you like it.
 
+Enjoy!
+
+~~~
+
     ~.~
     
     Umm, yeah. 
@@ -103,6 +107,4 @@ I hope you like it.
      
     So if you are a big corp. then just contact me, we would figure($)
      something out about it ;)
-     
-Enjoy!
 
