@@ -1,0 +1,224 @@
+Hi!
+
+Welcome to Glas Language.
+
+Glas is a Pythonic Jargon offshot that got out of hand...
+
+Basically, a language that is very close to a Human style of talking and still
+ is understandable by a machine.
+ 
+#!/usr/bin/env glas.itsalive
+
+You can express your thoughts like this:
+
+    $ why: so: "serious?" -> robot?
+
+And it would be understood by the Glas interpreter (which is a simple 
+ translator into Python by default) like this:
+ 
+    robot.why(so("serious?"))
+
+.. or your code could look like a Bible for programmers:
+
+"In the beginning, the universe was void and without form":
+
+    $ in: the beginning: "of times" :< the universe ~ was: void !and without: ->> form
+    
+    > the_universe.was( and(void, form.without()), in(the_beginning("of times")) )
+
+Some damned idiot changed the API of "god"? You can adapt with a minimum of 
+ hassle (operator symbol substitutions) without changing your meaning (wording):
+    
+    $ in: ->> the beginning: "of times", the universe ~ was: void !and without ->> form
+    
+    > the_beginning.in("of times", the_universe.was(and(void, form.without)))
+    
+    $ in ->> the beginning ~ of times: the universe ~ was: void !and without: form
+    
+    > the_beginning.of_times.in(the_universe.was(and(void, form.without()))
+    
+    $ in ->> the beginning ~ of times :: the universe ~ was: void !and without: form
+    
+    > the_beginning.of_times().in(the_universe.was(and(void, form.without()))
+
+    $ in ->> the beginning ~ of times: "Alpha & Omega" :: 
+        the universe ~ was: void !and without: form
+    
+    > the_beginning.of_times("Alpha & Omega").in(the_universe.was(and(void, form.without()))
+    
+    
+Your function calls are indistinguisheable from function definitions...
+ The difference is the statement 'attachment' operator '=>' or therefore, 
+ so you can ask that monster a question like this:
+ 
+    $ if: cookie jar ~ empty: =>
+        # "Why is the cookie jar empty, cookie monster?"
+        why: cookie jar ~ empty: -> cookie monster
+
+        # "Why is the cookie jar empty, cookie monster? why???"
+        why: cookie jar ~ empty: -> cookie monster ~ why: "???"
+        
+        
+You can "tail" calls with statements (attach statements blocks to calls) like 
+ this:
+ 
+    if: student ~ age: > 64 =>
+        {{ "Shutup, granpa! Drink your pills..." }
+    => if: student ~ age: < 16 =>
+        {{ "Grow up, kid... your momma's waiting home" }}
+    =>
+        {{ "Welcome to your {place} University student",
+            "{study} through your exams..."
+            %
+            place = "Hell", study = "weep"
+        }}
+            
+    You can use this behaviour for things like this:
+    
+    attach -> ship ~ weapons :: rockets, blasters, lasers =>
+        {{ "'Eeeek-sh-shsh-pssss!'",
+            "Weapons succesfuly attached",
+            "Testing weapons systems:" $ set prompt: "\t\t" }}
+            
+        # non rigourous syntax! Check glas.strogg for that
+        for weapon in *:        
+            {{ "Weapon system diagnostics: ", }}         # just like print(blabla),
+            run diagnostiscs: weapon =>
+                {{ "OK!" }}
+            => except: Failure -> Weapon =>
+                {{ "FAIL!!" }}
+            => 
+                {{ "WTF FAIL!" }}       # What a Terrible Failure! 
+                                        # (any exception)
+                                        #
+                stop:                   # or break: -> for... 
+                                        # you know... break: -> dance
+        
+        {{ $ clear prompt: }}
+        
+        {{ "Prepare for battle!" }}
+
+    detach: -> ship ~ weapons =>
+        {{ "Ship weapons detached! You are defenseless, seek cover!" 
+            "behind an asteroid... " }}
+    => else:
+        {{ "Ship weapons detachment FAILED!",
+            "Self destruct sequence INITIATED!",
+            "EJECT!" * 3 }}
+        self -> destruct :: 20sec -> Ship
+        
+        if: ship ~ pilot ~ ejected: =>
+            {{ "Phew! Your escape pod tumbles through the weightlessness of"
+                "space... ",
+                "Call for help on your {comm -> device} %
+                    comm -> device = "Radio" }}
+        =>
+            {{ "You die in a spectacular fireball of explosion!" }}
+            die: -> pilot ->> ship
+
+If you wish to "create" a class you simply associate one word for another like 
+ this:
+ 
+    Class: Base Class, Another Base =
+        some property = "Some value"
+        another property = "Another value"
+        some number = {# x ^ 2 - 2 * x + 1 #}
+        
+        __init__: my, some arg, another arg, *, ** =>
+            base args = *[2], *[1], **['some key']
+            base keys = {}
+            update: { 'x': **['x'], 'y': **['y'] } -> base keys
+            
+            __init__: *base args -> super: Class, my
+            
+            on my: => with: some arg, another arg =>
+                =
+                += 
+                
+            # my ~ some arg = some arg
+            # my ~ another arg = another arg
+            # ...
+            # my ~ some arg += some arg
+            # my ~ another arg = another arg
+            # ...
+
+    Bank Clerk: Person =
+       
+        __init__: my, name, age, hours, salary, department, project, *, ** =>
+            __init__: name, age -> super: Bank Clerk, my
+            
+            on: my => with: hours, salary, department, project =>
+                =
+            
+            if: my ~ hours > 40:
+                complain: hours, whine="Boss, my hours are too much, i'm tired!" 
+                    -> boss ->> my ~ department
+            
+            if: my ~ pay < 2000:
+                complain: pay, whine="Boss! The salary is TOO scrawny! I want MOAR!"
+                    -> boss ->> my ~ department
+                => else:
+                    {{ "(Mumble mumble) They claim they're paying me, so "
+                        "I'll pretend I'm working" }}
+                    
+                    start slacking: "game", "Doom3" -> my ~ computer ->> 
+                        desk ->> department
+
+
+S&*t! you forgot to add "start slacking -> Bank Clerk" and your commited work 
+ is being used!!! F-&-*K! 
+
+Calm down bro! Glas is there to save your ass!
+ 
+    start slacking: with what, which one =>
+
+        # Phew! That would smear things down for a second... nobody will notice ;)
+        play: which one -> with what
+        
+    ->  patch: (alert -> instances -> Class) 
+        ->> Class :: (Bank Clerk: $, (Base Class: $), (Another Base: $))
+
+#!/usr/bin/env glas.shepot
+
+{{ "Would you like some more Glas?" }
+
+{> user input <}
+
+if: not: user input =>
+    {{ "Aww, I am terribly sorry that you don't like Glas :-(",
+        "And I've wasted your precious time",
+        "Bye!" }}
+    stop: script
+
+#!/usr/bin/env glas
+
+load interactive: -> Shell ->> Glas
+
+interact: User: "effective" ->> Shell -> Glas
+
+{{ "Did you liked it?" }}
+{> user input $ key stroke: ->  stdin ->> sys <}
+
+if: user input in ("N", "n") =>
+    {{ "Aww, come. on! it's a nice language damn it! :D" }}
+    stop: script
+=>
+    {{ "I'm glad you like it ;)",
+        "Check it out by running the following 'shell' command"
+    }}
+    
+    filter = select: choice -> Input ->> Shell ->> Glas =>
+        if: choice == "ok" or choice = ... =>
+            True
+        None
+    
+    {> user input % "clone it from here (Y/y)? :" 
+            $ filter: <}: =>
+        {! git clone https://github.com/bhdz/glaslang.git !}
+        
+    => {> user input % "or visit my project's web page:"
+            $ filter: <}:
+        => {! firefox https://github.com/bhdz/glaslang !}: =>
+            {{ "It seems you don't have a nice browser... sorry 'bout that...",
+                "it's <a href=\"https://github.com/bhdz/glaslang/\">here</a>!" }}
+   
