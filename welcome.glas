@@ -23,28 +23,27 @@ And it would be understood by the Glas interpreter (which is a simple
 "In the beginning, the universe was void and without form":
 
     $ in: the beginning: "of times" :< the universe ~ was: void !and without: ->> form
-    
     > the_universe.was( and(void, form.without()), in(the_beginning("of times")) )
 
 Some damned idiot changed the API of "god"? You can adapt with a minimum of 
  hassle (operator symbol substitutions) without changing your meaning (wording):
     
-    $ in: ->> the beginning: "of times", the universe ~ was: void !and without ->> form
-    
+    $ in: ->> the beginning: "of times", the universe ~ was: void !and 
+        without ->> form
     > the_beginning.in("of times", the_universe.was(and(void, form.without)))
     
-    $ in ->> the beginning ~ of times: the universe ~ was: void !and without: form
-    
+    $ in ->> the beginning ~ of times: the universe ~ was: void !and 
+        without: form
     > the_beginning.of_times.in(the_universe.was(and(void, form.without()))
     
-    $ in ->> the beginning ~ of times :: the universe ~ was: void !and without: form
-    
+    $ in ->> the beginning ~ of times :: the universe ~ was: void !and 
+        without: form
     > the_beginning.of_times().in(the_universe.was(and(void, form.without()))
 
     $ in ->> the beginning ~ of times: "Alpha & Omega" :: 
         the universe ~ was: void !and without: form
-    
-    > the_beginning.of_times("Alpha & Omega").in(the_universe.was(and(void, form.without()))
+    > the_beginning.of_times("Alpha & Omega").in(the_universe.was(and(void, 
+        form.without()))
     
     
 Your function calls are indistinguisheable from function definitions...
@@ -171,8 +170,10 @@ S&*t! you forgot to add "start slacking -> Bank Clerk" and your commited work
 Calm down bro! Glas is there to save your ass!
  
     start slacking: with what, which one =>
-
-        # Phew! That would smear things down for a second... nobody will notice ;)
+        #
+        # Phew! That would smear things down for a second... 
+        #  Pretty sure nobody will notice ;)
+        #
         play: which one -> with what
         
     ->  patch: (alert -> instances -> Class) 
@@ -189,6 +190,14 @@ if: not: user input =>
         "And I've wasted your precious time",
         "Bye!" }}
     stop: script
+
+
+{{ "By the way",
+    "You can get REALLY messy with Glas statements", 
+    "Yet they will be readable, yet UGLY like hell!",
+    "So Glas allows you to have an *understandable* Perl MESS",
+    "don't abuse your freedom please!"
+}}
 
 #!/usr/bin/env glas
 
@@ -220,5 +229,6 @@ if: user input in ("N", "n") =>
             $ filter: <}:
         => {! firefox https://github.com/bhdz/glaslang !}: =>
             {{ "It seems you don't have a nice browser... sorry 'bout that...",
-                "it's <a href=\"https://github.com/bhdz/glaslang/\">here</a>!" }}
-   
+                "it's <a href=\"https://github.com/bhdz/glaslang/\">here</a>!" 
+            }}
+
