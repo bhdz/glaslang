@@ -25,7 +25,6 @@ Motto:
     "Syntax Error? Mission Impossible!"
 
 Check out welcome.glas OR Genesis.glas
-
 You will understand much more about it.
 
 I hope you like it.
