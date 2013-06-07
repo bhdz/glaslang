@@ -24,11 +24,69 @@ Concepts about Glas Syntax
 
 >- scoop front, weak
 >>- scoop front, strong
+a <: B
+B: a
+
+a ~ b <: C
+C: a ~ b
+
+a ~ b <: C: d
+C: a ~ b, d
+
+a ~ b >: C: d
+C: d, a ~ b
 
 
-:: Association thingy, stronger, think of function calls or dicts
- Now here you would use this if you want to make many many calls using :
- in a big pipeline.
+x ~ a <<: B: c
+x ~ B: c, a
+
+x ~ a <<: B: c ~ y
+x ~ B: c, a ~ y
+
+x ~ a <: B: y ~ b
+B: x ~ a, y ~ b
+
+: The association thingy has an aditive property when combined with <?- operator
+ x ~ A <- B
+ B ~ x ~ A
+ 
+ x ~ A <- B:
+ B: x ~ A
+ 
+ x ~ A -> B:
+ B: ~ x ~ A
+ 
+ 
+ x ~ A <<- B
+ x ~ B ~ A
+ 
+ x ~ A <- B::
+ a ~ G: ~ F:
+ a.G().F()
+ 
+ a ~ B <- C <- D :::
+ a ~ D: ~ C: ~ B:
+ a.D().C().B()
+ 
+ x ~ A <- B <- C :xc :xb :xa
+ x ~ C: xc ~ B: xb ~ A: xa
+ x.C(xc).B(xb).A(xa)
+ 
+ x ~ A <<- B: xb
+ x ~ B: xb ~ A
+ x.B(xb).A
+ 
+ x ~ y ~ A <<- B :xb :xa
+ x ~ y ~ B: xb ~ A: xa
+ x.y.B(xb).A(xa)
+ 
+more examples/exercises:
+
+ x ~ y ~ A <<- B :xb :xa -> z
+ z ~ x ~ y ~ B: xb ~ A: xa
+ 
+ x ~ y ~ A <<- B :xb :xa <- C: c
+ C: c, x ~ y ~ A <<- B :xb :xa
  
  
 
