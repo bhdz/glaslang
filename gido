@@ -8,8 +8,10 @@
 _gido() {
 
     if [ -z "$1" ]; then
+        echo "Status:" 
         git status
     else
+        echo "Modify:"
         local push=-
         local target=-
         local message=-
@@ -34,9 +36,11 @@ _gido() {
             done
             git commit -m "$message"
 
-            if [ "$push" == "-p" ]; then
-                git push origin master
-            fi
+
+        fi
+        
+        if [ "$push" == "-p" ]; then
+            git push origin master
         fi
     fi
 }
