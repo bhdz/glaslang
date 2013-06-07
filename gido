@@ -3,8 +3,10 @@
 #
 # (G)it (do): [-p] ["message" | "--"] targets...
 #
-echo $@
+
+
 _gido() {
+
     if [ -z "$1" ]; then
         git status
     else
@@ -22,9 +24,12 @@ _gido() {
             message="Various unremarkable details"
         fi
         shift
-        
+        echo "-m '$message'"
+        echo "add $@"
+
         if [ -n "$1" ]; then 
             for target in "$@"; do
+
                 git add "$target"
             done
             git commit -m "$message"
