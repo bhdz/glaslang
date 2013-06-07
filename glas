@@ -1,0 +1,28 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+Welcome to The Glas Language. 
+
+This is still a concept, therefore not to be used directly.
+
+Use this as a stub file for decorating all glas compatible scripts.
+Also, other glas elaborations like Wordy, and many many more.
+
+Enjoy!
+
+# Pure glas section
+{! glas !}
+stop: -> glas
+
+# Wordy Glas section
+{! glas.wordy !}
+stop: ->  wordy ->> glas
+
+# Glas Styks section
+{! glas.styks !}
+stop: -> glas ~ styks
+
+#!/usr/bin/env bash
+echo "Fail over tail code, remove when this is a complete shit"
+

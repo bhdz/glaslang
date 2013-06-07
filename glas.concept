@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# Hi.
+
+# Sorry about that bash script but for now glas is simply this:
+# A bash script which tries to load glaslang.py translator into certain mode
+# with a certain input (including xargs style invocation)
+
+# So, let's introduce ourselves, as a new Conceptual Language that still is not
+# ready and highly volatile.
+
+echo "Hi."
+echo "This is the Glas Language, a Pythonic offshot which got out of hand"
+echo ""
+echo "That's why it's higly experimental and buggy, and that's why"
+echo " this thing would try loading something from glaslang.py module"
+echo " and guess it's location on the disk, it has a default location"
+echo " "
+echo ""
+echo "Enjoy!"
+echo "-- Boril Boyanov"
+echo ""
+
+
+glas_load_lang() {
+    echo "##$ $@ ##$"
+}
+export glas_load_lang
+
+glas_load() {
+    echo "#$ $@ #$"
+}
+export glas_load
+
+glas() {
+    echo "#> $@ #>"
+}
+export glas
+
+glas_arg() {
+    echo "#>> $@ #>>"
+}
+export glas_arg
+
+
+# functions beginning with _ are details
+_scoop_args() {
+    echo "## $@ ##"
+}
+
+glas_load_lang "/home/nemo/Desktop/Glas/modules/glaslang.py" Glas
+glas_load Builtin Glas~python:__builtin__
+
+_schoop_args channels:Channels $@
+
+glas $arguments -channels:$channels::stdin:"$channels.stdin"::stdout:"$channels.stdout"
+
