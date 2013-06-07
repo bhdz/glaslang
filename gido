@@ -1,9 +1,5 @@
 #!/bin/bash
-
-#
 # (G)it (do): [-p] ["message" | "--"] targets...
-#
-
 
 _gido() {
 
@@ -35,8 +31,6 @@ _gido() {
                 git add "$target"
             done
             git commit -m "$message"
-
-
         fi
         
         if [ "$push" == "-p" ]; then
