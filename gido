@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#
+# (G)it (do): [-p] ["message" | "--"] targets...
+#
+echo $@
+_gido() {
+    if [ -z "$1" ]; then
+        git status
+    else
+        local push=-
+        local target=-
+        local message=-
+        
+        if [ "$1" == "-p" ]; then
+            push="-p"
+            shift
+        fi
+
+        message="$1"
+        if [ "$message" == "--" ]; then
+            message="Various unremarkable details"
+        fi
+        shift
+        
+        if [ -n "$1" ]; then 
+            for target in "$@"; do
+                git add "$target"
+            done
+            git commit -m "$message"
+
+            if [ "$push" == "-p" ]; then
+                git push origin master
+            fi
+        fi
+    fi
+}
+
+_gido $@
