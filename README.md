@@ -25,20 +25,18 @@ Description:
      you can speak like this: 
      
         why: cookie jar ~ empty: -> cookie monster  ~ why: "?"
-        > cookie_monster.why(cookie_jar.empty()).why("?")
+        #> cookie_monster.why(cookie_jar.empty()).why("?")
         
-    In fact, Glas is hardly a computer language at all! It's more like 
+    In fact, Glas is hardly a computer language at all. It's more like 
      training wheels for the machine to understand common English language.
      
-    I would be totaly surprised if Glas *doesn't* become THE most popular
-     language for teaching. Yeah. Teach the kid to form sentences in pure 
-     English and then juuust help him/her with Glasification of the sentence!
+    I would be surprised if Glas doesn't become one of the most popular
+     languages for teaching. Teach the kid to form sentences in pure 
+     English and then simply help him/her with Glasification of the sentence.
     
     Like this:
      "Petar went for a banana, a pear, a big orange, and carried them in a 
       basket home"
-      
-    Check this learning process out ;)
     
     Petar went for a banana, a pear, a big orange, 
         and carried them in a basket home
@@ -48,7 +46,7 @@ Description:
     Petar ~ went: for a banana, a pear, a big orange, 
         and carried them in a basket home
      > Petar.went(for_a_banana, a_pear, a_big_orange, and_carried_...
-     > ERROR! gettin' better ... 
+     > ERROR! getting better ... 
      > E+ ...
     
     Petar ~ went: for a banana, a pear, a big orange, 
@@ -66,22 +64,21 @@ Description:
     
     Petar ~ went: for a banana, a pear, a big orange ~
         and: carried them in a basket home
-     > Warning! You did it... 
-     >  juuuust finish it for a perfect score. 
+     > Warning! You did it... just finish it for a perfect score. 
      > A--
     
     Petar ~ went: for a banana, a pear, a big orange ~
         and: ~ carried them: in a basket home
      > BINGO! You've got your A! 
-     >  Now go nag your parents for more allowance, or score a FATAL :D
+     >  Now go ask your parents for more allowance, or score a FATAL
     
     Petar ~ went: for a banana, a pear, a big orange ~
         and: ~ carried: them, in a basket, home
-     > FATALITY! F**king A+! You're a star, and you ROCK!
+     > FATALITY! A+! You're a star, and you ROCK!
     
-    :D 
+    :-) 
     
-Check out welcome.glas or Genesis.glas. You will understand much more about it.
+Check out welcome.glas or Genesis.glas in the examples. You will understand much more about it.
 
 I hope you like it.
 
