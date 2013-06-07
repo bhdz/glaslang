@@ -1,0 +1,150 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+Wordy is a Glas mod, that would simply associate statements word by word,
+ and if those are ?comprehense?d by an argument list with another ':' or 
+ =, =:, => are substituted by the value of the ?comprehens?e?ion, 
+ if it's None, then the statement key is evaluated, in this case into 
+ an dictionary id, or the key name
+
+Name: Wordy ->> Glas: Wordy Glas
+
+
+For instance:
+
+{! glas !}
+
+Dictionary:
+    Alpha, Beta, Gamma, Delta
+
+# Now if I try each of it's keys and there is nothing behind them, Wordy Glas
+# should simply paste into the stdout
+
+{{ Alpha -> Dictionary }}
+#> Alpha
+
+# Now if we do this:
+
+Alpha = "airyan" -> Elaboration ->> Dictionary
+#> Dictionary ~ Elaboration ~ Alpha = "aleph"
+
+{{ Alpha -> Dictionary ->> Elaboration }}
+#> aleph
+
+{{ Alpha: -> Dictionary ->> Elaboration }}
+#> airyan
+
+{{ Alpha: -> Dictionary }}
+#> Alpha:
+
+{{ Alpha: -> Dictionary $ full: -> eval }}
+#> (Alpha: -> Dictionary)
+
+{{ Alpha: -> Dictionary ->> Elaboration $ full: -> eval: }}
+#> airyan -> Elaboration ~ Dictionary
+
+stop: -> glas
+
+As you can see, Glas doesn't care much about key's contents, so it simply 
+ reports to stdout and doesn't stop "execution" (evaluation or ?comprehension?)
+
+If for instance you connect Glas to a GUI module, then all your clicks are
+ simply futile and the GUI should look like a static image which doesn't even
+ respond in any way to the user. A pretty picture, nothing more.
+ 
+At the same time, Wordy Glas would be partying on your stdout (whatever it is)
+ like it's Mardi Gras
+
+Of course you can simply turn that off and mute the motherfucker when it becomes
+ annoying. In that case the Mardi Gras party would simply move to STDERR
+ and continue to abuse lotsa chemical cleaning preparatuses
+
+So, let's continue on with the main feature of Wordy Glas, it's the Dictionaries
+ you start forming, the default is the __builtin__ one of Python with a slight
+ modification: __builtin__['Glas'] = Glas.Cup(Glas.Channels())
+ 
+On that, you can add all kinds of words, ellaborations, and what not.
+
+Like this:
+
+{! glas !}
+
+# This effectively destroys the previous assoc. instance. Good thing to do.
+#  Do not define other Dictionaries inside a glascup E-V-ER
+# That's what Elaborations are for!
+# You can extend them with x ->> Dictionary = later though 
+
+Dictionary:
+    a, b, c, d
+
+A|А: -> a -> Elaboration ->> Dictionary:
+    [
+        The Letter A in English or the Letter А in Bulgarian        
+    ]
+Б|B: -> b -> Elaboration ->> Dictionary:
+    [
+        The Letter B in English or the Letter B in Bulgarian
+    ]
+
+stop: -> glas
+
+Now, you idealy a Wordy Glas interpretable file would contain only two 
+ Associations: Dictionary and Meta (for tagging purposes)
+ 
+The Dictionary will contain Elaboration subkey which would match other 
+ symbolic key representations.
+
+All "sub-elaborations" go through Dictionary ~ Elaboration subkeys
+ So all those alternatives would live there 
+ 
+Totally you would have 5 main branches and subbranches (5 paths if you will)
+    Dictionary # Main Data holder
+    Dictionary ~ Elaboration # Main Elaboration Data Holder (Elaborations)
+    Dictionary ~ Elaboration ~ *(Elaboration ~ Subordinate) # Sub-Elaborations
+    Meta    # Meta data, keys about keys, 
+            # for instance: Dictionary -> Revision ->> Numbers go there
+    Meta ~ Dictionary # Meta Data's Dictionary
+
+
+And so on.
+~.~
+
+Note:
+    Using Wordy Glas and Glas Styks you can churn out Glas code modules from
+    *.concept files and use the {! language !} Glas +Shelly symbols to 
+    select each code portion's translator (even C code) and
+    produce stitched corpses of Glas'es through different languages.
+    
+    You can even associate like this: 
+    some property -> Something = {! C $ 
+
+        #include <stdio.h>
+        
+        int main(int argc, char argv[]) {
+            printf("Some Value, Damn it!");
+            /*  Warning! This is highly NOT recomended and will produce 
+                buggy bad code,
+                please consider either use glas covered modules, or 
+                pure glas -> python
+            */
+            return 0
+        }
+    !}
+    
+    This ugly shit above can be evaluated into the thing you churn on the 
+    /dev/stdout (or any other file), juuust like bash subshells $(echo blabla), 
+    but MAY require automated compilation instalation procedures, other wise 
+    Glas would churn on stdout and evaluate keys, goinlive on your stdout.
+    Do NOT do this please. It's a last measure device. 
+    
+    For instance:
+        you might be developing a new conceptual kernel module that does 
+        something and start with this frankenstein above.
+        you'd better jitcompilerun yourself with soft {!!} commands
+        from a build -> concept device of your own.
+        
+        If you feel styck, simply use {! python !} or #!/...python
+
+Enjoy!
+
