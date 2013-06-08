@@ -1,4 +1,4 @@
-#!/usr/bin/env glas.concept
+#!/usr/bin/env glas
 
 Hi.
 
@@ -25,4 +25,5 @@ stop: -> glas ~ styks
 
 #!/usr/bin/env bash
 echo "Fail over tail code, remove when this is a complete shit"
+
 
