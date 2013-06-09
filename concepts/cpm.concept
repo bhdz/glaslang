@@ -1,11 +1,11 @@
-#!/usr/bin/env glas.concept
+#!/usr/bin/glas
 
 Hi.
 
 CPM stands for (C)ontrol, (P)resentation, (M)odel.
 
-Each and every aspect of dealing with your machine{'s programs} is logically 
- divided into the following parts:
+Each and every aspect of dealing with your machine (programs) is logically 
+represented by:
 
  * Control:
     Control{s} the application in a certain way loading Persentation{s} 
@@ -43,7 +43,16 @@ Each and every aspect of dealing with your machine{'s programs} is logically
  ! * Context:
     Each Action is interpeted in a given Context which modifies the way
     it renders.
-    (detail)
+
+ ! * Infrastructure:
+    Infrastructure is a special portion of a Model which has no associated 
+    Control{s} with it.
+    
+    For instance, your application's model might have OS specific functions
+    which only the general part *knows:* how to manipulate and execute.
+    
+    Infrastructure (Model)* -> Model :=
+        {? Class -> Object: how? ->> model ?}
  
 Enjoy!
 
