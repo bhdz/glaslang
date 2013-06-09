@@ -1,0 +1,49 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+CPM stands for (C)ontrol, (P)resentation, (M)odel.
+
+Each and every aspect of dealing with your machine{'s programs} is logically 
+ divided into the following parts:
+
+ * Control:
+    Control{s} the application in a certain way loading Persentation{s} 
+    according to it's calling parameters
+
+ * Presentation:
+    Presents the Model of the application in a readable format for the user
+    Presentation* -> Model
+ 
+ * Model:
+    The inner part of the application that user doesn't see or have access to.
+    The Presentation is loaded by the Control, and the user controls the 
+    application through Control + a given presentation (or more) selected
+    by the application of Control.
+    
+    User has access to a certain Model{'s} Presentation through a given 
+    Control:
+        Presentation ->> Model -> Control: how?
+        (Control: how? ~ Model ~ Presentation)
+
+    Also it has some action statement associated with it:
+        Control: how? 
+            ~ Model ~ Presentation =>
+                Action -> statement
+
+ ! * Actions are callbacks which are rendered by how? statements after 
+    succesful Interpretation. They are not part of the core.
+    (detail)
+    
+ ! * Interpretation:
+    Interpretation is the part of your Control ~ Presentation which 
+    renders an action in a specific Context -of an> Action
+    (detail)
+    
+ ! * Context:
+    Each Action is interpeted in a given Context which modifies the way
+    it renders.
+    (detail)
+ 
+Enjoy!
+
