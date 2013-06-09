@@ -115,9 +115,9 @@ Your choice of wording:
 When you slap object names and existing types together with parenthesis, you 
  create a new type:
  
- Mamal (Animal, Lifeform)
- (Animal, Lifeform) Mamal
- (Animal) Mamal (Lifeform)
+    Mamal (Animal, Lifeform)
+    (Animal, Lifeform) Mamal
+    (Animal) Mamal (Lifeform)
  
 are all the same. 
     
