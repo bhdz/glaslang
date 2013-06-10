@@ -129,25 +129,26 @@ Examples:
     # in other words:
     #  "make a new method in a new class defined by ':' operator"
     
-    Your choice of wording:
+    # ~
+    # Your choice of wording:
 
-        open: -> the ~ doors
-        the ~ doors ~ open:
-        # the.doors.open()
+    open: -> the ~ doors
+    the ~ doors ~ open:
+    # the.doors.open()
+    
+    open: -> the doors ~ with: "key"
+    the doors ~ open: ~ with: "key"
+    # the_doors.open().with("key")
         
-        open: -> the doors ~ with: "key"
-        the doors ~ open: ~ with: "key"
-        # the_doors.open().with("key")
-        
-    When you slap object names and existing types together with parenthesis, 
-     you create a new type, for instance:
+    # When you slap object names and existing types together with parenthesis, 
+    # you create a new type, for instance:
      
-        Mamal (Animal, Lifeform):
-        (Animal, Lifeform) Mamal:
-        (Animal) Mamal (Lifeform):
-        German (Dog) Sheppard:
+    Mamal (Animal, Lifeform):
+    Animal, Lifeform) Mamal:
+    (Animal) Mamal (Lifeform):
+    German (Dog) Sheppard:
      
-    are all the same. 
+    # ... are all the same. 
     
 Check out welcome.glas, Genesis.glas in the examples.
 You will understand much more about it.
