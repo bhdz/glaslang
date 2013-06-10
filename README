@@ -26,34 +26,55 @@ Description:
         why: cookie jar ~ empty: -> cookie monster  ~ why: "?"
         #> cookie_monster.why(cookie_jar.empty()).why("?")
         
+        my ~ roast: Beef ~ is: ready
+        #> my.roast(Beef).is(ready)
+        
+        hello: ~ take: bag, money ->> Honey <: and buy: some, Bread, Salami 
+            -> Maharaji
+            
+        #> Maharaji.hello().and_buy(Honey.take(bag, money), some, Bread, Salami)
+        
     In fact, Glas is hardly a computer language at all. It's more like 
      training wheels for the machine to understand common English language.
      
     The aims of Glas is for the code to be an easy text to read and understand,
     not so much ternseness and speed of writing, although those are some of
-    the effects of the syntax.
+    it's features.
      
 Examples:
 
     Person (object):
         __init__: my, name, age, sex =>
-            my ~ name = name
+            my ~ name = name # or name = name -> my
             my ~ age = age
             my ~ sex = sex
             ... # pass ...
             
-            work: "cv" -> my
+            do: "cv" -> my
         
         do: my, action =>
             append: action -> my ~ action list
             ...
-        
+            
+        done: my, action =>
+            if: action ~ in: done list ->> my =>
+                {{ "Sorry guy!", "{action} already done" $ 
+                    toggle ->> indent: "\t" -> Glas ~ Term }}
+                return True
+            =>
+                return False
+
+        #       
+        # optional parameter?
+        # optional parameter ?= with optional value besides None
+        #
         go: my, place, reason? =>
             ...
         
-        get job: my, company =>
+        get a job: my, company =>
             send: my ~ cv -> to: ->> company
             go: interview -> company
+            # ... You Hippie! :-)
             
         work: my =>
             go: my ~ job -> my ~ company
@@ -71,14 +92,18 @@ Examples:
 
             base = { "name": "unknown", "age": 0 }
             
-            if: "name" in **: # Warning: extended syntax; if: ... ~ in: ... =>
-                base ~ name = ** ~ name
-                base ~ age  = ** ~ age
+            # Warning: extended syntax; if: ... ~ in: ... =>
+            if: "name" in ** =>             
+                base['name'] = **['name']
+                base['age']  = **['age'] 
+                # Or use:
+                #   key name !! dict
+                #   dict ! key name
                 
             __init__: **base -> super: Developer, my
         
         slack off: my, game =>
-            play: game?"Soliataire" -> my
+            play: game ?= "Soliataire" -> my
         
         work: my, project =>
             if: project ~ started: == False =>
@@ -87,43 +112,47 @@ Examples:
                 my ~ project = project
                 asssign: my -> project
                 
-                do:
-
-    # New quick idea?
+                do: my ~ project -> my
+    #
+    # A new quick idea to test out? Or, how to focus Reader's attention on the 
+    #  methods inside a Class module?
+    #
     make account: my, person(Person), initial amount (Money) =>
         account = Account: person
         my ~ accounts += account
         put: initial amount -> account
     
     -> Bank Clerk (Person):
-            __init__: my, department, *, **
-            with: my ~ on: department => =
+            __init__: my, department, *, ** =>
+                with: my ~ on: department => =
             
-    # or Make a new method in a new class defined by \: operator
+    # in other words:
+    #  "make a new method in a new class defined by ':' operator"
     
-    
-Your choice of wording:
+    Your choice of wording:
 
-    open: -> the ~ doors
-    the ~ doors ~ open:
-    # the.doors.open()
+        open: -> the ~ doors
+        the ~ doors ~ open:
+        # the.doors.open()
+        
+        open: -> the doors ~ with: "key"
+        the doors ~ open: ~ with: "key"
+        # the_doors.open().with("key")
+        
+    When you slap object names and existing types together with parenthesis, 
+     you create a new type, for instance:
+     
+        Mamal (Animal, Lifeform):
+        (Animal, Lifeform) Mamal:
+        (Animal) Mamal (Lifeform):
+        German (Dog) Sheppard:
+     
+    are all the same. 
     
-    open: -> the doors ~ with: "key"
-    the doors ~ open: ~ with: "key"
-    # the_doors.open().with("key")
-    
-When you slap object names and existing types together with parenthesis, you 
- create a new type:
- 
-    Mamal (Animal, Lifeform)
-    (Animal, Lifeform) Mamal
-    (Animal) Mamal (Lifeform)
- 
-are all the same. 
-    
-Check out welcome.glas or Genesis.glas in the examples. You will understand much more about it.
+Check out welcome.glas, Genesis.glas in the examples.
+You will understand much more about it.
 
-I hope you like it.
+I hope you like it ;-)
 
 Enjoy!
 
