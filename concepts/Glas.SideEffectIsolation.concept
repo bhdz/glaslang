@@ -1,0 +1,37 @@
+#!/usr/bin/env glas.concept
+
+Hi.
+
+When designing methods, think how you will isolate the side effects (those that are independent of argument's values), AND compose your function/method in terms of SIDE EFFECT "frames" linked by operators and other PURE functions.
+Like this:
+
+    x_dirty = {@ some side effect statement list @}
+    y_dirty = {@ ... @}
+    z_dirty = {@ ... @}
+
+
+    size: x, y, z -> Math ~ Vector =>
+        x_dirty = {@ .... (side effect statement list) ... @}
+        y_dirty = {@ ... @}
+        z_dirty = {@ ... @}
+        sqrt: square: x_dirty + square: y_dirty + square: z_dirty
+        
+        # or sqrt: 
+        #       square: {@ x ... @} + 
+        #           square: {@ y_dirty @} + 
+        #               square: z_dirty
+
+Or of course you can side-off whole portions 
+
+    foo bar: a, b =>
+        x = {@ ... @} + 10
+
+
+The side effect isolator will set the "dirty bit" flag ON of it's statement, 
+ and this will affect every association of of it with other statements.
+
+Every other statement which has a constraint (DECORATOR) of FORCE PURE will
+ raise an Exception.
+ 
+Enjoy!
+
