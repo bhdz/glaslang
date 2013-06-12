@@ -1,0 +1,27 @@
+#!/bin/cat
+
+# Здравей.
+# Използвай този файл ако {причина.име} 
+
+# (причина@добавка)
+# (стойност'причина@добавка)
+
+# синтаксис, ключове, syntax keys, vocabulary | do {-> something}\n
+# semantic values, abilities | can {-> something else}\n\w
+
+# Enjoy!
+# Notes:
+
+# {name'sub@language} doesn't distingish between tuples and lists
+# For him, tuples are just a modification on lists which uses block memory, vs. linked list nodes. Check out the special file
+
+# Gollum doesn't distinguish between methods/functions and regular objects.
+# If tis' method it evaluate it's return, and if it's object's properties, this.
+
+# It uses `char` to define a character
+# It uses ' and . for property access
+
+# This is a kind of EBNF FILE
+
+# start: lang ->> gollum
+
