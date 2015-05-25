@@ -1,0 +1,7 @@
+C ~ A <<: B <=> C ~ B: ~ A
+C ~ A <: B <=> B: ~ C ~ A
+C ~ A <: B: a, b, c <=> B: a, b, c; ~ C ~ A
+C ~ A <<: B: a, b, c; <=> C ~ B: a, b, c; ~ A
+
+C ~ A <<:: B <=:> C ~ B :: A => ...
+...
