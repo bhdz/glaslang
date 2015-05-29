@@ -12,6 +12,7 @@ code::dict(object):: klass
 pycode::dict(object):: klass.klass
 Rune(Dictionary):: klass
 Interface::
+consume:: _in **Context
 goble_up:: _in *Runes **Context
 transform:: _in *Runes **context
 translate:: _in _out *Runes **Context
