@@ -208,3 +208,12 @@ Petar ~ went: for a banana, a pear, a big orange ~
 
 :-) 
 
+>:D If you think this might be _a_ .viable: Programming language ->> I am _happy_ to tell you that I might work for ...virtual money... {@ comming soon |>> Bitcoin, Dogecoin@} <:D
+
+{> The power is with you %s | Luke <}
+{+ output +}
+{-- input?no. --}
+{@ comment??no.. @}
+{$ I _don't_ know: yet $}
+
+
